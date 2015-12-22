@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set hidden
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -31,6 +32,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
+Plugin 'szw/vim-ctrlspace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
