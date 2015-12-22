@@ -59,3 +59,6 @@ let g:molokai_original = 1
 
 " syntax highlight on by default
 syntax on
+
+" enable line numbers by default
+:set number
