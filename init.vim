@@ -55,7 +55,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " colorscheme
 colorscheme molokai
-let g:molokai_original = 1
 
 " syntax highlight on by default
 syntax on
