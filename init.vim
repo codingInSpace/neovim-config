@@ -70,3 +70,4 @@ syntax on
 " enable line numbers by default
 :set number
 
+:set shiftwidth=2
