@@ -53,6 +53,7 @@ filetype plugin indent on    " required
 " remaps
 vnoremap <C-c> "+y
 " nnoremap <C-v> "+p
+nnoremap <silent> <esc> :noh<cr><esc>
 
 " autostart NERDTree
 autocmd StdinReadPre * let s:std_in=1
