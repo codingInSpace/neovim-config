@@ -53,6 +53,7 @@ filetype plugin indent on    " required
 
 " remaps
 let mapleader = "\<Space>"
+nnoremap , :
 vnoremap <C-c> "+y
 " nnoremap <C-v> "+p
 nnoremap <silent> <esc> :noh<cr><esc>
