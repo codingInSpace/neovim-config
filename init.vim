@@ -51,6 +51,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " remaps
+let mapleader = "\<Space>"
 vnoremap <C-c> "+y
 " nnoremap <C-v> "+p
 nnoremap <silent> <esc> :noh<cr><esc>
@@ -61,6 +62,11 @@ nmap <silent> <A-l> :wincmd l<CR>
 nnoremap <F3>  :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTree<CR>
 nmap <Tab> gt
+nnoremap <Leader>e g_
+nnoremap <Leader>b 0
+nnoremap <Leader>q :q<CR>
+nmap <leader>l :bnext<CR>
+nmap <leader>h :bprevious<CR>
 
 " autostart NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -68,6 +74,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " populate g:airline_symbols dictionary with powerline symbols
 let g:airline_powerline_fonts = 1
+
+" enable buffer display when there's only one tab open
+let g:airline#extensions#tabline#enabled = 1
 
 " colorscheme
 colorscheme molokai
