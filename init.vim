@@ -87,17 +87,23 @@ let g:airline_powerline_fonts = 1
 " enable buffer display when there's only one tab open
 let g:airline#extensions#tabline#enabled = 1
 
-" colorscheme
-colorscheme molokai
+" Quality of life settings
+set nowrap		" don't wrap lines
+colorscheme molokai	" colorscheme
+syntax on		" syntax highlight on by default
+set number		" enable line numbers by default
+set autoindent    	" always set autoindenting on
+set copyindent    	" copy the previous indentation on autoindenting
+set shiftwidth=2	" auto indent space
+set tabstop=2		" tab space
+set smarttab		" insert tabs on start of line according to shiftwidth
+set shiftround    	" use multiple of shiftwidth when indenting with '<' and '>'
+set smartcase		" case insensitive search unless one uppercase char is used
+set incsearch     	" show search matches as you type
+set history=1000        " remember more commands and search history
+set undolevels=1000     " use many levels of undo
+set title               " change the terminal's title
 
-" syntax highlight on by default
-syntax on
-
-" enable line numbers by default
-:set number
-
-" tab space
-:set shiftwidth=2
-
-" case insensitive search unless one uppercase char is used
-:set smartcase
+" backups are unnecessary with git
+set nobackup
+set noswapfile
