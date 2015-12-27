@@ -56,6 +56,8 @@ let mapleader = "\<Space>"
 nnoremap , :
 vnoremap <C-c> "+y
 " nnoremap <C-v> "+p
+noremap <C-k> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
+noremap <C-j> ddp
 nnoremap <silent> <esc> :noh<cr><esc>
 nmap <silent> <A-k> :wincmd k<CR>
 nmap <silent> <A-j> :wincmd j<CR>
@@ -110,3 +112,4 @@ set title               " change the terminal's title
 " backups are unnecessary with git
 set nobackup
 set noswapfile
+
