@@ -58,7 +58,8 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
-nnoremap <silent> <F3>  :NERDTreeToggle<CR>
+nnoremap <F3>  :NERDTreeToggle<CR>
+nmap <Tab> gt
 
 " autostart NERDTree
 autocmd StdinReadPre * let s:std_in=1
