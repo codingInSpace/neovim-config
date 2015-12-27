@@ -34,6 +34,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'szw/vim-ctrlspace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,7 +62,7 @@ nmap <silent> <A-h> :wincmd h<CR>
 nmap <silent> <A-l> :wincmd l<CR>
 nnoremap <F3>  :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTree<CR>
-nmap <Tab> gt
+nmap <leader><Tab> gt
 nnoremap <Leader>e g_
 nnoremap <Leader>b 0
 nnoremap <Leader>q :q<CR>
@@ -71,6 +72,10 @@ nmap <leader>h :bprevious<CR>
 nmap <leader>p :CtrlP<CR>
 nmap <leader>pb :CtrlPBuffer<CR>
 nmap <leader>pm :CtrlPMixed<CR>
+nmap <leader>jj :BuffergatorMruCyclePrev<CR>
+nmap <leader>kk :BuffergatorMruCycleNext<CR>
+nmap <Tab> :BuffergatorMruCycleNext<CR>
+nmap <leader>o :BuffergatorOpen<CR>
 
 " autostart NERDTree
 autocmd StdinReadPre * let s:std_in=1
