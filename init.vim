@@ -66,11 +66,12 @@ nmap <Tab> gt
 nnoremap <Leader>e g_
 nnoremap <Leader>b 0
 nnoremap <Leader>q :q<CR>
+nnoremap <leader>w :w<CR>
 nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
-nmap <leader>p :CtrlP<cr>
-nmap <leader>pb :CtrlPBuffer<cr>
-nmap <leader>pm :CtrlPMixed<cr>
+nmap <leader>p :CtrlP<CR>
+nmap <leader>pb :CtrlPBuffer<CR>
+nmap <leader>pm :CtrlPMixed<CR>
 
 " autostart NERDTree
 autocmd StdinReadPre * let s:std_in=1
