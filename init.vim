@@ -59,6 +59,7 @@ nmap <silent> <A-j> :wincmd j<CR>
 nmap <silent> <A-h> :wincmd h<CR>
 nmap <silent> <A-l> :wincmd l<CR>
 nnoremap <F3>  :NERDTreeToggle<CR>
+nnoremap <F4> :NERDTree<CR>
 nmap <Tab> gt
 
 " autostart NERDTree
