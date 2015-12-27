@@ -64,7 +64,7 @@ nnoremap <F3>  :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTree<CR>
 nmap <leader><Tab> gt
 nnoremap <Leader>e g_
-nnoremap <Leader>b 0
+nnoremap <Leader>s 0
 nnoremap <Leader>q :q<CR>
 nnoremap <leader>w :w<CR>
 nmap <leader>l :bnext<CR>
