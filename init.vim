@@ -78,4 +78,8 @@ syntax on
 " enable line numbers by default
 :set number
 
+" tab space
 :set shiftwidth=2
+
+" case insensitive search unless one uppercase char is used
+:set smartcase
