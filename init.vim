@@ -34,6 +34,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 Plugin 'szw/vim-ctrlspace'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -67,6 +68,9 @@ nnoremap <Leader>b 0
 nnoremap <Leader>q :q<CR>
 nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
+nmap <leader>p :CtrlP<cr>
+nmap <leader>pb :CtrlPBuffer<cr>
+nmap <leader>pm :CtrlPMixed<cr>
 
 " autostart NERDTree
 autocmd StdinReadPre * let s:std_in=1
