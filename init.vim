@@ -103,6 +103,7 @@ set shiftwidth=2	" auto indent space
 set tabstop=2		" tab space
 set smarttab		" insert tabs on start of line according to shiftwidth
 set shiftround    	" use multiple of shiftwidth when indenting with '<' and '>'
+set ignorecase	" case insensitive search
 set smartcase		" case insensitive search unless one uppercase char is used
 set incsearch     	" show search matches as you type
 set history=1000        " remember more commands and search history
