@@ -35,6 +35,7 @@ Plugin 'szw/vim-ctrlspace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -92,9 +93,13 @@ let g:airline_powerline_fonts = 1
 " enable buffer display when there's only one tab open
 let g:airline#extensions#tabline#enabled = 1
 
+" Color theme
+set background=dark
+colorscheme PaperColor	
+let g:airline_theme='PaperColor'
+
 " Quality of life settings
 set nowrap		" don't wrap lines
-colorscheme molokai	" colorscheme
 syntax on		" syntax highlight on by default
 set number		" enable line numbers by default
 set autoindent    	" always set autoindenting on
