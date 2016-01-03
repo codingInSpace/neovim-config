@@ -82,6 +82,8 @@ nmap <leader>kk :BuffergatorMruCycleNext<CR>
 nmap <Tab> :BuffergatorMruCycleNext<CR>
 nmap <leader><Tab> :BuffergatorMruCyclePrev<CR>
 nmap <leader>o :BuffergatorOpen<CR>
+nnoremap <silent> <Leader>+ :vertical resize +5<CR>
+nnoremap <silent> <Leader>- :vertical resize -5<CR>
 
 set pastetoggle=<F2>
 
