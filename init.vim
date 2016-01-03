@@ -68,7 +68,6 @@ nmap <silent> <A-h> :wincmd h<CR>
 nmap <silent> <A-l> :wincmd l<CR>
 nnoremap <F3>  :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTree<CR>
-nmap <leader><Tab> gt
 nnoremap <Leader>e g_
 nnoremap <Leader>s 0
 nnoremap <Leader>q :q<CR>
@@ -81,6 +80,7 @@ nmap <leader>pm :CtrlPMixed<CR>
 nmap <leader>jj :BuffergatorMruCyclePrev<CR>
 nmap <leader>kk :BuffergatorMruCycleNext<CR>
 nmap <Tab> :BuffergatorMruCycleNext<CR>
+nmap <leader><Tab> :BuffergatorMruCyclePrev<CR>
 nmap <leader>o :BuffergatorOpen<CR>
 
 set pastetoggle=<F2>
