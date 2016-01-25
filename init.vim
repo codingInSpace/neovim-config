@@ -16,6 +16,7 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'pangloss/vim-javascript'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
 
@@ -57,6 +58,9 @@ set pastetoggle=<F2>
 " autostart NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" auto start deoplete 
+let g:deoplete#enable_at_startup = 1
 
 " populate g:airline_symbols dictionary with powerline symbols
 let g:airline_powerline_fonts = 1
