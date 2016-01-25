@@ -17,6 +17,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'pangloss/vim-javascript'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/neosnippet.vim'
 
 call plug#end()
 
