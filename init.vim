@@ -18,6 +18,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Shougo/deoplete.nvim'
 Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neocomplete.vim'
 
 call plug#end()
 
