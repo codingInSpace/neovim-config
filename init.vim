@@ -27,6 +27,8 @@ filetype plugin indent on    " required
 " remaps
 let mapleader = "\<Space>"
 nnoremap , :
+nnoremap j gj
+nnoremap k gk
 vnoremap <C-c> "+y
 " nnoremap <C-v> "+p
 noremap <C-k> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
