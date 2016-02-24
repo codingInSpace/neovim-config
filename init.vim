@@ -92,6 +92,12 @@ let g:airline_powerline_fonts = 1
 " enable buffer display when there's only one tab open
 let g:airline#extensions#tabline#enabled = 1
 
+" Latex options
+let g:Tex_AutoFolding = 0
+let g:Tex_FoldedSections     = ""
+let g:Tex_FoldedEnvironments = ""
+let g:Tex_FoldedMisc         = ""
+
 " Color theme
 set background=dark
 colorscheme PaperColor	
