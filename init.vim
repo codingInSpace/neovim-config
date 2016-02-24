@@ -99,9 +99,15 @@ let g:Tex_FoldedEnvironments = ""
 let g:Tex_FoldedMisc         = ""
 
 " Color theme
-set background=dark
-colorscheme PaperColor	
-let g:airline_theme='PaperColor'
+"papercolor:
+"set background=dark
+"colorscheme papercolor
+"
+"solarized:
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set background=light " or dark
+colorscheme solarized
+let g:airline_theme='solarized'
 
 " Quality of life settings
 set nowrap		" don't wrap lines
