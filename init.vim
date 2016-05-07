@@ -19,6 +19,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'Shougo/deoplete.nvim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'ap/vim-css-color'
+Plug 'blueyed/vim-diminactive'
 
 call plug#end()
 
@@ -56,8 +58,10 @@ nmap <leader><Tab> :BuffergatorMruCyclePrev<CR>
 nmap <leader>o :BuffergatorOpen<CR>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
+imap <Leader><Tab> <Esc>
 
 """""neosnippet configuration 
+let g:neosnippet#disable_runtime_snippets = { "_": 1, }
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets/'
 imap <C-s>     <Plug>(neosnippet_expand_or_jump)
@@ -100,14 +104,14 @@ let g:Tex_FoldedMisc         = ""
 
 " Color theme
 "papercolor:
-"set background=dark
-"colorscheme papercolor
+set background=dark
+colorscheme PaperColor
 "
 "solarized:
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set background=light " or dark
-colorscheme solarized
-let g:airline_theme='solarized'
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"set background=dark " or light
+"colorscheme solarized
+"let g:airline_theme='solarized'
 
 " Quality of life settings
 set nowrap		" don't wrap lines
