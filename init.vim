@@ -31,15 +31,20 @@ let mapleader = "\<Space>"
 nnoremap , :
 nnoremap j gj
 nnoremap k gk
+nnoremap ö l
+nnoremap l h
+nnoremap h /
 vnoremap <C-c> "+y
+vnoremap ö l 
+vnoremap l h
 " nnoremap <C-v> "+p
 noremap <C-k> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
 noremap <C-j> ddp
 nnoremap <silent> <esc> :noh<cr><esc>
 nmap <silent> <A-k> :wincmd k<CR>
 nmap <silent> <A-j> :wincmd j<CR>
-nmap <silent> <A-h> :wincmd h<CR>
-nmap <silent> <A-l> :wincmd l<CR>
+nmap <silent> <A-ö> :wincmd l<CR>
+nmap <silent> <A-l> :wincmd h<CR>
 nnoremap <F3>  :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTree<CR>
 nnoremap <Leader>e g_
