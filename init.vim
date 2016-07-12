@@ -81,6 +81,9 @@ xmap <C-s>     <Plug>(neosnippet_expand_target)
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
+" Commands
+command! -nargs=0 Sudow w !sudo tee % > /dev/null
+
 " For conceal markers.
 if has('conceal')
   set conceallevel=2 concealcursor=niv
